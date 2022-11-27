@@ -4,7 +4,7 @@ const data = {
         name: 'Kakashi',
         slug: 'Naruto 6th Hokagi',
         category: 'Shinopi Konoha',
-        image: '/images/p1.jpg', // 679px × 829px
+        image: "https://cdn.pixabay.com/photo/2020/12/08/12/23/kakashi-hatake-5814250__340.png",
         Power: 120,
         Kills: 1230,
         NickName: 'El Nasikh',
