@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class HomeScreen extends Component {
     componentDidMount() {
-        this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
+        this.interval = setInterval(() => this.setState({ time: Date.now() }), 1);
       }
       componentWillUnmount() {
         clearInterval(this.interval);
@@ -25,7 +25,7 @@ class HomeScreen extends Component {
                 height: "300vh",
                 backgroundColor: "black",
                 color: "white",
-                fontSize: "50px",
+                fontSize: "30px",
                 flexDirection: "column"  
 
             }}>
@@ -137,10 +137,13 @@ backgroundcolor:"#2E8ECE",
             <h1>
                 {
                     
-                    "The time  is Running : "+ this.state.time
+                    "The time  is Running : "+ new Date(this.state.time * 1000).toISOString().slice(11, 13) + " Hours " + new Date(this.state.time  * 1000).toISOString().slice(14, 16) + " Minutes " + new Date(this.state.time * 1000).toISOString().slice(17, 19) + " Seconds "
                 }
                 
             </h1>
+            <div>
+                
+            </div>
             </div>  
 
            
